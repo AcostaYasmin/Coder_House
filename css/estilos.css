@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palevioletred;
+    position:sticky;
+    height: 100px;
+    width: 100vw;
+}
+ul{
+    display: flex;
+    align-items: center;
+
+}
+li{
+    list-style: none;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: aqua;
+}
+.mi_logo{
+    height: 85px;
+    width: 95px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.backgroundTitulo{
+    display: flex;
+    background-image: url(../imag/geometric-leaves.webp);
+    margin: 5px;
+    justify-content: center center;
+    height: 80px;
+    width: 100vw
+}
+h1{
+    text-align: center;
+    align-items: center;
+    position:relative;
+    left: 500px;
+    top: 10px;
+    margin: 5px;
+}
+.imagenContainer{
+    display: flex;
+    margin:10px;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../imag/background-7123020_1920.jpg);
+    height: 400px;
+}
+.imgIzq{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 10px;
+    height: 250px;
+    width: 250px;
+}
+.imgCentro{
+    display: flex;
+    border-radius: 50px;
+    border: 1px solid white;
+    box-shadow:10px;
+    width: 350px;
+    height: 350px;
+}
+.imgFlechas{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 10px;
+}
+.backgroundText{
+    display: flex;
+    background-color: beige;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+
+}
+.containerImg{
+    display: flex;
+    flex-direction:row;
+    height: 400px;
+    width: 100vw;
+    justify-content: space-around;
+    position: absolute;
+    top: 3opx;
+    left:60px;
+}
+.sectionContainer{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    background-image: url(../imag/geometric-leaves.webp);
+}
+h2{
+    display: flex;
+    position: center;
+    text-align:center;
+    padding: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.articleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+}
+footer {
+    background-color: palevioletred;
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    align-items: center;
+}
+.redSocial{
+    width: 30px;
+    height: 30px;
+}
+.tituloBackground{
+    display: flex;
+    background-image: url(../imag/geometric-leaves.webp);
+}
+.imgBio {
+    display: flex;
+    margin: 40px;
+    height: auto;
+    width:600px;
+}
+.textBio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 20px;
+}
+.bioContainer{
+    display: flex;
+    vertical-align: center;
+    position:relative;
+    justify-content: stretch;
+}
+.tituloContainer__Murales{
+    text-align: center; 
+    padding: 10px;
+    margin: 10px;
+    background-image: url(/imag/cuadernoypincel.jpg);
+    height: 100px;
+    width: 100vw;
+}
+.imgMural{
+    display: flex;
+    margin: 20px;
+    justify-content:center;
+    height: 250px;
+}
+.listacontairMural{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    background-image:url(/imag/geometric-leaves.webp);
+}
+.imgDecorativa{
+    display: flex;
+    margin: 20px;
+    background-image: url(../imag/background-7123020_1920.jpg);}
+
+.imgZorro{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+    justify-content:space-between;
+}
+.divMurlaes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+}
+.muralExterior{
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+}
+.divMurales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.bakcgroundTitulo{
+    display: flex;
+    background-color: beige;
+}
+.containerContactos{
+    display: flex;
+    background-image: url(../imag/geometric-leaves.webp);
+}
+.containContacto{
+    display: flex;
+    background-image: url(/imag/background-7123020_1920.jpg);
+    height: 300px;
+    width: 100vw;
+}
+#form {
+    border:1px solid palevioletred;
+    width:250px;
+    margin:auto;
+}
+#form legend{
+    font-weight:bold;
+    font-size:12px;
+}
+#form ol{
+    list-style:none;
+}
+#form ol li{
+    padding-bottom:5px;
+}
+#form ol li label{
+    width:120px;
+    float:left;
+    text-align:left;
+}
+#form input[type=text] {
+    border:1px solid #CCCCCC;
+}
+#form input.btn {
+    padding:3px;
+    color:#FFFFFF;
+    background-color:palevioletred;
+    border:1px solid #000000;
+}
+.backgroundForm{
+    display: flex;
+    background-image: url(/imag/background-7123020_1920.jpg);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font);
+    color: var(--font-color);
+}
+.container__faq {
+    width: 1200px;
+    margin: auto;
+}
+.text__faq {
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+}
+.text__faq h2 {
+font-family: var(--font);
+    font-size: 56px;
+    letter-spacing: 5px;
+    color: black;
+    margin-bottom: 30px;
+}
+.container__lists {
+    display: flex;
+    justify-content: space-around;
+}
+.container__column1,
+.container__column2 {
+    width: 500px;
+}
+dt{
+    font-weight: 700;
+    margin: 20px 0px;
+}
