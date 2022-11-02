@@ -1,0 +1,501 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden
+}
+nav{
+    background-color: palevioletred;
+    }
+.css-button-sliding-to-left--sand {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        z-index: 0;
+        background: #fff;
+        overflow: hidden;
+        border: 2px solid #adb5bd;
+        color: #adb5bd;
+}
+.css-button-sliding-to-left--sand:hover {
+        color: #fff;
+}
+.css-button-sliding-to-left--sand:hover:after {
+        width: 100%;
+}
+.css-button-sliding-to-left--sand:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transition: all 0.3s ease;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background: #adb5bd;
+}
+ul{
+    align-items: center;
+    list-style: none;
+}
+li{
+    list-style: none; 
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: aqua;
+}
+.mi_logo{
+    height: 85px;
+    width: 95px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.logo{ justify-self: center;
+}
+.buttonClik{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/* mobile first */ 
+#header_Grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid #333;
+}
+.navInicio{
+    display:grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    justify-self: center;
+}
+.iniciaSesion{
+    justify-self: center;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+.d-nonesm{
+    display: none;
+}
+.homeTitle{
+    font-size: 32px;
+}
+.t-center{
+    text-align: center;
+}
+.imgYasmin{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self:center;
+    align-self: center;
+}
+.mainMenu{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+footer {
+    background-color: palevioletred;
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    align-items: center;
+}
+.redSocial{
+    width: 30px;
+    height: 30px;
+}
+.backgroundText{
+    display: flex;
+    background-color: beige;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+}
+.containerImg{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 400px;
+    width: 100vw;
+}
+.sectionContainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    align-self:center;
+    justify-self: center;
+    background-image: url(../imag/geometric-leaves.webp);
+}
+h2{
+    display: flex;
+    position: center;
+    text-align:center;
+    padding: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.articleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+}
+/*tablet */
+@media (min-width:768px){
+    .navInicio{ display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .mainMenu{
+        display:flex;
+        justify-content: space-around;
+        align-self: center;
+    }
+    .t-center{
+        text-align: center;}
+    .sec-home{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .homeText{
+        align-self: center;
+    }
+    .imgCollage{
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        align-self: center;
+    }
+    .backgroundText{
+        display: flex;
+        background-color: beige;
+        height: auto;
+        margin: 10px 10px 10px 10px;}
+    .d-none{
+        display: none;
+    }
+    .d-nonesm{
+        display: block;
+    }
+    .containerImg{
+        display: flex;
+        flex-direction:row;
+        height: 400px;
+        width: 100vw;
+        justify-content: space-around;
+        position: absolute;
+        top: 3opx;
+        left:60px;
+    }
+    .imagenContainer{
+        display: flex;
+        margin:10px;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url(../imag/background-7123020_1920.jpg);
+        height: 400px;
+    }
+    .imgIzq{
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 10px;
+        height: 250px;
+        width: 250px;
+    }
+    .imgCentro{
+        display: flex;
+        border-radius: 50px;
+        border: 1px solid white;
+        box-shadow:10px;
+        width: 350px;
+        height: 350px;
+        overflow-y: hidden
+    }
+    .imgFlechas{
+        display: flex;
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        box-shadow: 10px;
+    }
+    .backgroundText{
+        display: flex;
+        background-color: beige;
+        height: auto;
+        margin: 10px 10px 10px 10px;
+    
+    }
+    .containerImg{
+        display: flex;
+        flex-direction:row;
+        height: 400px;
+        width: 100vw;
+        justify-content: space-around;
+        position: absolute;
+        top: 3opx;
+        left:60px;
+    }
+    .sectionContainer{
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        background-image: url(../imag/geometric-leaves.webp);}
+    }
+    .tituloContainer__Murales{
+        text-align: center; 
+        font-size: 60px ;
+        padding: 10px;
+        margin: 10px;
+        background-image: url(/imag/cuadernoypincel.jpg);
+        height: 100px;
+        width: 100vw;
+    }
+    .imgMural{
+        display: flex;
+        margin: 20px;
+        justify-content:center;
+        height: 250px;
+    }
+    .listacontairMural{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+        background-image:url(/imag/geometric-leaves.webp);
+    }
+    .imgDecorativa{
+        display: flex;
+        margin: 20px;
+        background-image: url(../imag/background-7123020_1920.jpg);}
+    .divMurlaes{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin: 10px;}
+    .muralExterior{
+            margin: 10px;
+            height: 300px;
+            width: 300px;
+        }
+    .divMurales{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+    .bakcgroundTitulo{
+            display: flex;
+            background-color: beige;
+        }
+/*descktop*/
+@media (min-width:1028px){
+    ul li a {
+        font-size: 20px;
+    }
+    .navInicio{ display: flex;
+        align-items: center;
+        justify-content: space-around;}
+    .mainMenu{
+            display:flex;
+            justify-content: space-around;
+        }
+    .backgroundText{
+        display: flex;
+        background-color: beige;
+        height: auto;
+        margin: 10px 10px 10px 10px;
+    }
+    .containerImg{
+        display: flex;
+        flex-direction:row;
+        height: 400px;
+        width: 100vw;
+        justify-content: space-around;
+        position: absolute;
+        top: 3opx;
+        left:60px;
+    }
+    .t-center{
+        text-align: center;}
+    .sectionContainer{
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        background-image: url(../imag/geometric-leaves.webp);
+    }
+    h2{
+        display: flex;
+        position: center;
+        text-align:center;
+        padding: 50px;
+        align-items: center;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    .articleContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid black;
+        height: 300px;
+        width: 300px;
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .d-none{
+        display: none;}
+    .d-nonesm{
+        display: block;
+    }
+    .imagenContainer{
+            display: flex;
+            margin:10px;
+            align-items: center;
+            justify-content: space-around;
+            background-image: url(../imag/background-7123020_1920.jpg);
+            height: 400px;
+        }
+    .tituloBackground{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../imag/geometric-leaves.webp);
+        }
+    .imgIzq{
+            display: flex;
+            border-radius: 20px;
+            box-shadow: 10px;
+            height: 250px;
+            width: 250px;
+        }
+        .imgCentro{
+            display: flex;
+            border-radius: 50px;
+            border: 1px solid white;
+            box-shadow:10px;
+            width: 350px;
+            height: 350px;
+        }
+    .imgFlechas{
+            display: flex;
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            box-shadow: 10px;
+        }
+    .backgroundText{
+            display: flex;
+            background-color: beige;
+            height: auto;
+            margin: 10px 10px 10px 10px;
+        
+        }
+    .containerImg{
+            display: flex;
+            flex-direction:row;
+            height: 400px;
+            width: 100vw;
+            justify-content: space-around;
+            position: absolute;
+            top: 3opx;
+            left:60px;
+    }
+    .sectionContainer{
+            display:flex;
+            align-items:center;
+            justify-content: space-around;
+            background-image: url(../imag/geometric-leaves.webp);
+        }
+    h2{
+            display: flex;
+            position: center;
+            text-align:center;
+            padding: 50px;
+            align-items: center;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+    .articleContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            padding: 30px;
+            border-radius: 20px;
+        }
+    .divMurlaes{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            margin: 10px;}
+    .muralExterior{
+            margin: 10px;
+            height: 300px;
+            width: 300px;
+        }
+    .divMurales{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+    .bakcgroundTitulo{
+            display: flex;
+            background-color: beige;
+        }
+    .mixImage{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    .footer_index {
+    background-color: palevioletred;
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    align-items: center;
+}
+.redSocial{
+    width: 30px;
+    height: 30px;
+}
+    }

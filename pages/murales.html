@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yas_Murals</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilo_grid.css">
 </head>
 <body>
-    <header> 
-        <nav>
+    <header class="header_Grid"> 
+        <nav class="navInicio">
             <img src="../imag/logomaschico.jpeg" alt="Logo" class="mi_logo">
-            <ul>
+            <div class="menu">
+                <ul class="mainMenu">
                 <li> <a href="/pages/index.html"> Inicio </a></li>
                 <li> <a href="/pages/biografia.html"> Biografia </a></li>
                 <li> <a href="/pages/murales.html"> Murales</a></li>
                 <li> <a href="/pages/preguntasFrecuentes.html">Preguntas frecuentes</a></li>
                 <li><a href="/pages/contactos.html">Contactos</a></li>
-            </ul>
+                </ul>
+            </div>
             <div class="divCounteiner">
-                <button>Iniciar sesion </button>
-                <button>Registrarme</button>
+                <button class="css-button-sliding-to-left--sand">Iniciar sesion </button>
+                <button class="css-button-sliding-to-left--sand">Registrarme</button>
             </div>
         </nav>
         <main class="muralCountainer">
             <div class="listacontairMural">
-                <ul class="lista">
-                <h3> <a href="#"> Elegí tu idea</a></h3>
+                <ul class="lista mainMenu">
+                <h3 class="mainMenu t-center"> <a href="#"> Elegí tu idea</a></h3>
                 <li> <a href="#muralInterior">Murales interior</a></li>
                 <li> <a href="#muralExterior">Mural exterior</a></li>
                 <li> <a href="#muralPinterest">Ideas pinterest</a></li>
@@ -40,41 +42,44 @@
                 </div>
                 <h2 id="muralInterior" class="bakcgroundTitulo"> Murales de interior</h2>
                 <div class="divMurales">
-                    <h3> Pintura Latex y acrilicos</h3>
+                    <h3 class="tituloPintura d-nonesm"> Pintura Latex y acrilicos</h3>
                         <img src="../imag/paredInicio.jpeg" alt="imgParedInicio" class="muralExterior">
-                        <img src="../imag/muralyYas.jpeg" alt="imgMuralYas" class="muralExterior">
+                        <img src="../imag/muralyYas.jpeg" alt="imgMuralYas" class="muralExterior d-nonesm">
                         <img src="../imag/muralyLulu.jpeg" alt="imgLulu" class="muralExterior">
                 </div>
                     <h2 id="muralExterior" class="bakcgroundTitulo"> Murales de exterior</h2>
                 <div class="divMurlaes">
-                    <h3> Pintura sintetica</h3>
+                    <h3 class="tituloSintetica d-nonesm"> Pintura sintetica</h3>
                         <img src="../imag/persiananainicio.jpeg" alt="imgInico" class="muralExterior">
                         <img src="/imag/pintandopersianaparada.jpeg" alt="imgPintando" class="muralExterior" >
-                        <img src="/imag/persianacasiterminada.jpeg" alt="persianaCasiTerminada" class="muralExterior">
+                        <img src="/imag/persianacasiterminada.jpeg" alt="persianaCasiTerminada" class="muralExterior d-nonesm">
                 </div>
                     <h2 id="muralPinterest" class="bakcgroundTitulo" >Ideas Pinterest</h2>
-                <div>
-                    <h3>Mix</h3>
+                    <h3 class="subtiMix d-nonesm">Mix de ideas, todo es posible con creatividad...</h3>
+                <div class="mixImage">
                     <img src="../imag/pinteresInterior.jpg" alt="imgInt" class="muralExterior">
-                    <img src="/imag/pinterestExterior.jpg" alt="muralExt" class="muralExterior">
+                    <img src="/imag/pinterestExterior.jpg" alt="muralExt" class="muralExterior d-nonesm">
                     <img src="/imag/pinterestExxteior.jpg" alt="Muralext "class="muralExterior">
-                    <img src="/imag/pinterestinterioor.jpg" alt="muralInti" class="muralExterior">
-                    <img src="/imag/pinterestInteriorcaras.jpg" alt="muralIntt" class="muralExterior">
-                    <img src="/imag/pinterExteior.jpg" alt="muralExtt" class="muralExterior">
-                    <img src="../imag/pinterestInteriorr.jpg" alt="muralInttt" class="muralExterior">
+                    <img src="/imag/pinterestinterioor.jpg" alt="muralInti" class="muralExterior d-nonesm">
+                    <img src="/imag/pinterestInteriorcaras.jpg" alt="muralIntt" class="muralExterior d-nonesm ">
+                    <img src="/imag/pinterExteior.jpg" alt="muralExtt" class="muralExterior d-nonesm">
+                    <img src="../imag/pinterestInteriorr.jpg" alt="muralInttt" class="muralExterior d-nonesm">
                     <img src="/imag/muralNiños.jpg" alt="muralNiños"class="muralExterior" >
+                </div>
+                <div class="buttonClik d-none">
+                    <button class="css-button-sliding-to-left--sand"> <a href="/page/index.html">Para volver, click me</a></button> 
                 </div>
             </article>
         </section>
-            <footer>
-                <ul>
+            <footer class="footer_index" >
+                <ul class="footer_index">
                     <li> <a href=""> Inicio </a></li>
                     <li> <a href=""> Biografia </a></li>
                     <li> <a href=""> Murales</a></li>
                     <li> <a href="">Preguntas frecuentes</a></li>
                     <li><a href="">Contactos</a></li>
                 </ul>
-                <ul>
+                <ul class="footer_index">
                     <li>
                         <a href="https://Twitter.com">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="Logo Twitter" class="redSocial">

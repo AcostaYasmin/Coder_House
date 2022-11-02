@@ -5,18 +5,12 @@
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: palevioletred;
-    position:sticky;
-    height: 100px;
-    width: 100vw;
 }
 ul{
     display: flex;
     align-items: center;
-
+    list-style: none;
 }
 li{
     list-style: none;
@@ -35,6 +29,41 @@ a:hover {
     border-radius: 20px;
     margin: 10px;
 }
+.css-button-sliding-to-left--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #adb5bd;
+    color: #adb5bd;
+}
+.css-button-sliding-to-left--sand:hover {
+    color: #fff;
+}
+.css-button-sliding-to-left--sand:hover:after {
+    width: 100%;
+}
+.css-button-sliding-to-left--sand:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #adb5bd;
+}
 .backgroundTitulo{
     display: flex;
     background-image: url(../imag/geometric-leaves.webp);
@@ -43,6 +72,61 @@ a:hover {
     height: 80px;
     width: 100vw
 }
+.t-center{
+    text-align: center;
+}
+/*mobile first*/
+.header_Grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid #333;
+}
+.nav{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-row: auto auto auto;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    justify-self: center;
+}
+.iniciaSesion{
+    justify-self: center;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.d-nonesm{
+    display: none;
+}
+.homeTitle{
+    font-size: 32px;
+}
+footer {
+    background-color: palevioletred;
+    margin-top: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    align-items: center;
+}
+.redSocial{
+    width: 30px;
+    height: 30px;
+}
+.buttonClik{
+    align-items: center;
+    justify-content: center;
+}
+
+/*Tablet and Desktop*/
+@media (min-width:1028px){
 h1{
     text-align: center;
     align-items: center;
@@ -50,6 +134,9 @@ h1{
     left: 500px;
     top: 10px;
     margin: 5px;
+}
+.d-none{
+    display: none;
 }
 .imagenContainer{
     display: flex;
@@ -124,20 +211,6 @@ h2{
     padding: 30px;
     border-radius: 20px;
 }
-footer {
-    background-color: palevioletred;
-    margin-top: 30px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contacto{
-    align-items: center;
-}
-.redSocial{
-    width: 30px;
-    height: 30px;
 }
 .tituloBackground{
     display: flex;
@@ -169,6 +242,7 @@ footer {
 }
 .tituloContainer__Murales{
     text-align: center; 
+    font-size: 60px ;
     padding: 10px;
     margin: 10px;
     background-image: url(/imag/cuadernoypincel.jpg);
